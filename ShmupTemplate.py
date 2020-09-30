@@ -3,7 +3,7 @@
 # licensed under CC-BY-3 <http://creativecommons.org/licenses/by/3.0/>
 # Art and other graphics are taken from Kenny.nl
 
-
+#-----------------------------------------Main settings of game
 import pygame
 import random
 from os import path
@@ -17,14 +17,14 @@ height = 600
 FPS = 60
 POWERUP_TIME = 5000
 
-# Basic Colors:
+#-----------------------------------------Basic Colors:
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
-# Initializing the Game
+#-----------------------------------------Initializing the Game
 
 pygame.init()
 pygame.mixer.init()
@@ -32,10 +32,10 @@ screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Space Shooter By SHR ")
 clock = pygame.time.Clock()
 
-# sprites are anything that moves around in the screen
+#-----------------------------------------sprites are anything that moves around in the screen
 
 all_sprites = pygame.sprite.Group()
-# Drawing the Scores and stuff
+#-----------------------------------------Drawing the Scores and stuff
 font_name = pygame.font.match_font("arial")
 
 
